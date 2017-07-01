@@ -1,0 +1,15 @@
+$box-sizes: (
+  xsmall: rem-calc(200),
+  small: rem-calc(325),
+  medium: rem-calc(500),
+  large: rem-calc(600),
+  xlarge: rem-calc(800),
+);
+
+@each $size, $value in $box-sizes {
+  .box-#{$size} {
+    width: 100%;
+    max-width: $value;
+    margin: 0 auto;
+  }
+}

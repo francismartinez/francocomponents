@@ -1,0 +1,20 @@
+$color-palette: (
+  primary: #50dffa,
+  secondary: #a41999,
+  tertiary: #591f89,
+  black: #0e0e0e,
+  white: #fff,
+);
+
+// Colors
+@each $name, $color in $color-palette {
+  &.text-#{$name} {
+    color: $color;
+  }
+}
+
+.underline {
+  padding-bottom: $global-padding;
+  margin-bottom: $global-margin;
+  border-bottom: $global-border;
+}

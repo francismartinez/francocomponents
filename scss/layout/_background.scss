@@ -1,0 +1,14 @@
+$background-palette: (
+  primary: #50dffa,
+  secondary: #a41999,
+  tertiary: #591f89,
+  black: #0e0e0e,
+  white: #fff,
+);
+
+// Colors
+@each $name, $color in $background-palette {
+  &.background-#{$name} {
+    background-color: $color;
+  }
+}
